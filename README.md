@@ -9,8 +9,8 @@ release binary, for hosts that cannot reach `claude.ai` / `downloads.claude.ai`.
 
 <p>
   <img alt="Linux x64 | arm64" src="https://img.shields.io/badge/Linux-x64%20%7C%20arm64-FCC624?style=for-the-badge&logo=linux&logoColor=black">
-  <img alt="Windows x64 | arm64" src="https://img.shields.io/badge/Windows-x64%20%7C%20arm64-0078D6?style=for-the-badge&logo=windows&logoColor=white">
-  <img alt="PowerShell 5.1" src="https://img.shields.io/badge/PowerShell-5.1-5391FE?style=for-the-badge&logo=powershell&logoColor=white">
+  <img alt="Windows x64 | arm64" src="https://img.shields.io/badge/Windows-x64%20%7C%20arm64-0078D6?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0wIDBoMTEuM3YxMS4zSDB6TTEyLjcgMEgyNHYxMS4zSDEyLjd6TTAgMTIuN2gxMS4zVjI0SDB6TTEyLjcgMTIuN0gyNFYyNEgxMi43eiIvPjwvc3ZnPg==">
+  <img alt="PowerShell 5.1" src="https://img.shields.io/badge/PowerShell-5.1-5391FE?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyLjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0iTTQgNWw4IDctOCA3Ii8+PHBhdGggc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyLjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgZD0iTTEzIDE5aDciLz48L3N2Zz4=">
 </p>
 <p>
   <img alt="No admin rights" src="https://img.shields.io/badge/admin%20rights-not%20needed-2ea44f?style=flat-square">
