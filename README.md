@@ -23,7 +23,7 @@ release binary, for hosts that cannot reach `claude.ai` / `downloads.claude.ai`.
 [✨ Features](#-features) •
 [🚀 Quick start](#-quick-start) •
 [🐧 Linux](#-installing-on-linux) •
-[🪟 Windows](#-installing-on-windows) •
+[💻 Windows](#-installing-on-windows) •
 [⚙️ How it works](#%EF%B8%8F-how-it-works) •
 [✅ Verified](#-verified) •
 [📜 License](#-license)
@@ -37,7 +37,7 @@ release binary, for hosts that cannot reach `claude.ai` / `downloads.claude.ai`.
 |     |     |
 | --- | --- |
 | 🧳 **One file in, one file out** | `make-claude-installer.bat` is the whole builder. It produces one installer that carries the binary inside it. |
-| 🪶 **Zero prerequisites** | Needs only **Windows PowerShell 5.1**, which ships with Windows. No Docker, WSL, Git Bash, `curl`, `jq` or Node.js. |
+| 🍃 **Zero prerequisites** | Needs only **Windows PowerShell 5.1**, which ships with Windows. No Docker, WSL, Git Bash, `curl`, `jq` or Node.js. |
 | 🔓 **No admin rights** | Not to build, and not to install on Windows either. Nothing outside `%TEMP%` and the output folder is written. |
 | 🔐 **Checksum verified twice** | The binary is checked against upstream's `manifest.json` at build time and again at install time. |
 | ♻️ **Byte-for-byte reproducible** | Rebuilding the same version and platform gives an identical file, so a published checksum can be re-derived later. |
@@ -49,7 +49,7 @@ release binary, for hosts that cannot reach `claude.ai` / `downloads.claude.ai`.
 | Platform | Output | Installs to |
 | --- | --- | --- |
 | 🐧 `linux-x64`, `linux-arm64` | `claude-code-<version>-<platform>.sh` | `/usr/local` |
-| 🪟 `win32-x64`, `win32-arm64` | `claude-code-<version>-<platform>.bat` | `%USERPROFILE%\.local` |
+| 💻 `win32-x64`, `win32-arm64` | `claude-code-<version>-<platform>.bat` | `%USERPROFILE%\.local` |
 
 > [!NOTE]
 > 32-bit Windows is not offered because upstream publishes no 32-bit build.
@@ -147,7 +147,7 @@ bash claude-code-2.1.263-linux-x64.sh --extract /tmp/x   # inspect, install noth
 
 ---
 
-## 🪟 Installing on Windows
+## 💻 Installing on Windows
 
 ```bat
 claude-code-2.1.263-win32-x64.bat                    :: into %USERPROFILE%\.local
@@ -231,7 +231,7 @@ Deliberate differences:
 
 - 🐧 **Linux** installs to `/usr/local` rather than `$HOME`, so `claude` is on
   `PATH` for every user, not just the one that ran it.
-- 🪟 **Windows** installs to `%USERPROFILE%\.local`, mirroring the `~/.local`
+- 💻 **Windows** installs to `%USERPROFILE%\.local`, mirroring the `~/.local`
   layout the Unix side uses, and links rather than symlinks. This layout is
   **modeled on** the Unix one: `claude install` cannot be run offline to observe
   what it produces natively on Windows, so what is verified is that the install
@@ -244,7 +244,7 @@ Deliberate differences:
   `exit 0` and a `__CLAUDE_PAYLOAD_BELOW__` marker, so bash never parses the
   binary data. The installer finds the offset with `awk` (which stops at the
   marker) and pipes `tail -n +N "$0"` into `tar -xz`.
-- 🪟 **Windows:** the gzip stream is concatenated onto the batch file after its
+- 💻 **Windows:** the gzip stream is concatenated onto the batch file after its
   `exit /b`, so cmd.exe never reads that far. The PowerShell half sits between
   two marker lines near the top; the batch half reads only the **first 64KB** of
   the file as text to find it, so the binary is never decoded as text, and the
@@ -375,7 +375,7 @@ losslessly.
 </details>
 
 <details>
-<summary>🪟 <b>The Windows installer</b> — installed into a throwaway <code>--prefix</code></summary>
+<summary>💻 <b>The Windows installer</b> — installed into a throwaway <code>--prefix</code></summary>
 
 <br>
 
